@@ -31,24 +31,12 @@ void Adivinar_ASCII (char caracter)
         printf(">>> ");
         scanf("%d", &ASCII);
         intentos++;
-        if (caracter < ASCII)
-        {
-            printf("El valor en la tabla ASCII de %c es MENOR\n", caracter);
-        }
-        if (caracter > ASCII)
-        {
-            printf("El valor en la tabla ASCII de %c es MAYOR\n", caracter);
-        }
+        if (caracter < ASCII) printf("El valor en la tabla ASCII de %c es MENOR\n", caracter);
+        if (caracter > ASCII) printf("El valor en la tabla ASCII de %c es MAYOR\n", caracter);
     }
     while (caracter != ASCII);
     printf("Felicitaciones, lo has encontrado! ");
-    if (intentos == 1)
-    {
-        printf("Te ha costado %d intento\n", intentos);
-    }
-    else
-    {
-        printf("Te ha costado %d intentos\n", intentos);
-    }
+    if (intentos == 1) printf("Te ha costado %d intento\n", intentos);
+    else printf("Te ha costado %d intentos\n", intentos);
     printf("El valor correspondiente de [ %c ]  en la tabla ASCII es %d o 0x%x\n", caracter, ASCII, ASCII);
 }
